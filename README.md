@@ -1,47 +1,63 @@
-# CPU Scheduling Simulator
+# Operating Systems Toolkit (C)
 
-A console-based CPU Scheduling Simulator implemented in C, demonstrating core Operating System scheduling algorithms.
+This repository contains implementations of core Operating Systems concepts written in **C**.  
+The project focuses on understanding how an operating system schedules processes and avoids deadlock using well-known algorithms.
 
-## Algorithms Implemented
+ CPU Scheduling Simulator
+
+This module implements the following CPU scheduling algorithms:
+
 - First Come First Serve (FCFS)
-- Shortest Job First (SJF) – Non-preemptive
-- Priority Scheduling – Non-preemptive
-- Round Robin Scheduling
+- Shortest Job First (SJF)
+- Priority Scheduling (Non-preemptive)
+- Round Robin
 
-## Features
-- User can choose the scheduling algorithm
-- Dynamic input for:
+Features
+- Menu-driven program
+- User-defined number of processes
+- User-defined arrival time, burst time, priority, and time quantum
+- Calculates:
+  - Waiting Time
+  - Turnaround Time
+  - Average Waiting Time
+  - Average Turnaround Time
+- Displays execution order of processes
+
+Deadlock Avoidance – Banker’s Algorithm
+
+This module implements **Banker’s Algorithm** to determine whether a system is in a safe or unsafe state.
+
+ Features
+- User input for:
   - Number of processes
-  - Arrival time
-  - Burst time
-  - Priority (for Priority Scheduling)
-  - Time quantum (for Round Robin)
-- Displays:
-  - Waiting Time (WT)
-  - Turnaround Time (TAT)
-  - Average WT and TAT
-  - Execution order of processes
+  - Number of resource types
+  - Allocation matrix
+  - Maximum requirement matrix
+  - Available resources
+- Calculates the **Need matrix**
+- Determines:
+  - Safe state or Deadlock
+  - Safe sequence (if it exists)
 
-## Technologies Used
-- C Programming Language
-- Online C Compiler / GCC
 
-## Sample Output
-Screenshots of execution for each algorithm are available in the `screenshots` folder.
+How to Run
 
-## How to Run
-1. Copy the code into any C compiler (GCC or online compiler)
-2. Compile and run the program
-3. Select the desired scheduling algorithm
-4. Enter process details when prompted
+The programs can be compiled and executed using any standard C compiler.
 
-## Learning Outcomes
-- Strong understanding of CPU scheduling concepts
-- Practical implementation of OS algorithms
-- Improved logic building and debugging skills
+CPU Scheduling
 
----
+Alternatively, the programs can be executed using an online C compiler.
 
-### Author
-**Abhigna Gajendra**  
-B.Tech Computer Science Engineering
+ Concepts Covered
+
+- CPU Scheduling Algorithms
+- Process Management
+- Deadlock Avoidance
+- Resource Allocation
+- Operating Systems Fundamentals
+
+
+
+Author
+Abhigna Gajendra  
+Computer Science Engineering Student
